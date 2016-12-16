@@ -30,14 +30,8 @@ Public Class frmLogin
 
         If Not IsNothing(dt) Then
             If Des_Y_EncriptaContrasenia(txtPass.Text) = dt.Rows.Item(0).Item("Pass") Then
-
-                If CBool(dt.Rows.Item(0).Item("Activo")) Then
-                    nombreUser = txtUsuario.Text
-                    nombreCUser = dt.Rows.Item(0).Item("NombreCompleto")
-                    passUser = txtPass.Text
-                    tipoUser = dt.Rows.Item(0).Item("Tipo")
-                    codUser = dt.Rows.Item(0).Item("Codigo")
-
+                usuario = New Usuarios(dt.Rows.Item(0).Item("Codigo"), dt.Rows.Item(0).Item("Nivel"), dt.Rows.Item(0).Item("Nombre"), dt.Rows.Item(0).Item("Pass"), CBool(dt.Rows.Item(0).Item("Activo")))
+                If usuario.getActivo() Then
                     'frmPrincipal = New Principal
                     'frmPrincipal.Show()
                     cerrar = True

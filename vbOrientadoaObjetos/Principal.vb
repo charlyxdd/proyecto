@@ -69,7 +69,7 @@ Public Class Principal 'Hola
         Dim frm As New frmLogin
         frm.ShowDialog()
         Me.WindowState = FormWindowState.Maximized
-        verificarPermisos()
+        'verificarPermisos()
         accesosDirectos()
         permisos()
         'barra.Visible = False
@@ -97,41 +97,41 @@ Public Class Principal 'Hola
         End Try
     End Function
 
-    Private Sub verificarPermisos()
-        Dim cnn As New Conexion(cadConexion)
-        Dim dt As DataTable = cnn.getConsulta("SELECT * FROM Permisos WHERE Tipo=" & tipoUser & " AND Consulta=0")
-        If Not IsNothing(dt) Then
-            For Each row As DataRow In dt.Rows
-                Dim modulo As DataTable = cnn.getConsulta("SELECT Modulo FROM Modulos WHERE Codigo=" & row.Item("Modulo"))
-                Select Case modulo.Rows.Item(0).Item("Modulo").ToString.ToLower
-                    Case "Cuentas de Usuarios".ToLower
-                        mnuSesiones.Enabled = False
-                        Exit Select
-                    Case "Tipos de cuenta".ToLower
-                        mnuTipos.Enabled = False
-                        Exit Select
-                    Case "Proveedores".ToLower
-                        mnuProveedores.Enabled = False
-                        Exit Select
-                    Case "Caja".ToLower
-                        mnuCaja.Enabled = False
-                        Exit Select
-                    Case "Productos".ToLower
-                        mnuInsumos.Enabled = False
-                        Exit Select
-                    Case "Pedidos-Compras".ToLower
-                        'mnuPedidos.Enabled = False
-                        Exit Select
-                    Case "Clientes".ToLower
-                        mnuClientes.Enabled = False
-                        Exit Select
-                    Case "Empleados".ToLower
-                        'mnuEmpleados.Enabled = False
-                        Exit Select
-                End Select
-            Next
-        End If
-    End Sub
+    'Private Sub verificarPermisos()
+    '    Dim cnn As New Conexion(cadConexion)
+    '    Dim dt As DataTable = cnn.getConsulta("SELECT * FROM Permisos WHERE Tipo=" & usuario.getNivel & " AND Consulta=0")
+    '    If Not IsNothing(dt) Then
+    '        For Each row As DataRow In dt.Rows
+    '            Dim modulo As DataTable = cnn.getConsulta("SELECT Modulo FROM Modulos WHERE Codigo=" & row.Item("Modulo"))
+    '            Select Case modulo.Rows.Item(0).Item("Modulo").ToString.ToLower
+    '                Case "Cuentas de Usuarios".ToLower
+    '                    mnuSesiones.Enabled = False
+    '                    Exit Select
+    '                Case "Tipos de cuenta".ToLower
+    '                    mnuTipos.Enabled = False
+    '                    Exit Select
+    '                Case "Proveedores".ToLower
+    '                    mnuProveedores.Enabled = False
+    '                    Exit Select
+    '                Case "Caja".ToLower
+    '                    mnuCaja.Enabled = False
+    '                    Exit Select
+    '                Case "Productos".ToLower
+    '                    mnuInsumos.Enabled = False
+    '                    Exit Select
+    '                Case "Pedidos-Compras".ToLower
+    '                    'mnuPedidos.Enabled = False
+    '                    Exit Select
+    '                Case "Clientes".ToLower
+    '                    mnuClientes.Enabled = False
+    '                    Exit Select
+    '                Case "Empleados".ToLower
+    '                    'mnuEmpleados.Enabled = False
+    '                    Exit Select
+    '            End Select
+    '        Next
+    '    End If
+    'End Sub
 
     Public Sub accesosDirectos()
         
@@ -212,11 +212,7 @@ Public Class Principal 'Hola
                     Exit Sub
                 End If
             End If
-            tipoUser = Nothing
-            codUser = Nothing
-            nombreCUser = Nothing
-            nombreUser = Nothing
-            passUser = Nothing
+            usuario = Nothing
             Dim frm As New frmLogin
             frm.Show()
             'Me.Close()
@@ -230,11 +226,7 @@ Public Class Principal 'Hola
                     Exit Sub
                 End If
             End If
-            tipoUser = Nothing
-            codUser = Nothing
-            nombreCUser = Nothing
-            nombreUser = Nothing
-            passUser = Nothing
+            usuario = Nothing
 
             Me.Close()
         End If
