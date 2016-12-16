@@ -14,6 +14,7 @@ D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaO
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.exe
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.xml
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.pdb
+<<<<<<< HEAD
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaObjetos.exe
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaObjetos.pdb
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaObjetos.xml
@@ -22,3 +23,9 @@ D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaO
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.Resources.resources
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.Principal.resources
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.vbproj.GenerateResource.Cache
+=======
+C:\Users\Geisler\Desktop\Proyectos\proyecto\vbOrientadoaObjetos\bin\Debug\vbOrientadoaObjetos.exe.config
+C:\Users\Geisler\Desktop\Proyectos\proyecto\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.exe
+C:\Users\Geisler\Desktop\Proyectos\proyecto\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.xml
+C:\Users\Geisler\Desktop\Proyectos\proyecto\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.pdb
+>>>>>>> 415920adb49772042bcbc969fa15625d28fe69ae
