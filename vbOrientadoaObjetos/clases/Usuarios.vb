@@ -3,12 +3,14 @@
     Private nivel As Integer
     Private nombre As String
     Private pass As String
+    Private Activo As Boolean
 
-    Public Sub New(ByVal codigo As Integer, ByVal nivel As Integer, ByVal nombre As String, ByVal pass As String)
+    Public Sub New(ByVal codigo As Integer, ByVal nivel As Integer, ByVal nombre As String, ByVal pass As String, ByVal Activo As Boolean)
         Me.codigo = codigo
         Me.nivel = nivel
         Me.nombre = nombre
         Me.pass = pass
+        Me.Activo = Activo
     End Sub
 
     Public Sub New(ByVal nivel As Integer, ByVal nombre As String, ByVal pass As String)

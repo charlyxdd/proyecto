@@ -14,3 +14,7 @@ D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaO
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.exe
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.xml
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.pdb
+C:\Users\Geisler\Desktop\Proyectos\proyecto\vbOrientadoaObjetos\bin\Debug\vbOrientadoaObjetos.exe.config
+C:\Users\Geisler\Desktop\Proyectos\proyecto\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.exe
+C:\Users\Geisler\Desktop\Proyectos\proyecto\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.xml
+C:\Users\Geisler\Desktop\Proyectos\proyecto\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.pdb
