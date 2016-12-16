@@ -31,4 +31,48 @@
         Me.Nombre = Nombre
         Me.Usuario = Usuario
     End Sub
+
+    Public Function consultar()
+
+    End Function
+
+    Public Sub eliminar()
+
+    End Sub
+
+    Public Sub guardar()
+
+    End Sub
+
+    Public Function getCliente()
+        Return Me.Cliente
+    End Function
+
+    Public Function getCostoFinal()
+        Return Me.CostoFinal
+    End Function
+
+    Public Function getCostoEstimado()
+        Return Me.getCostoEstimado
+    End Function
+
+    Public Function getEstado()
+        Return Me.Estado
+    End Function
+
+    Public Function getNombre()
+        Return Me.Nombre
+    End Function
+
+    Public Function getUsuario()
+        Return Me.Usuario
+    End Function
+
+    Public Sub setCliente(ByVal Cliente As Integer)
+        Me.Cliente = Cliente
+    End Sub
+
+    Public Sub setCostoFinal(ByVal CostoFinal As Integer)
+        Me.getCostoFinal()
+    End Sub
 End Class
