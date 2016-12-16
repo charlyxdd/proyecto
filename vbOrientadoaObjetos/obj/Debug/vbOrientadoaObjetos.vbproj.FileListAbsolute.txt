@@ -14,3 +14,11 @@ D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaO
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.exe
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.xml
 D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.pdb
+D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaObjetos.exe
+D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaObjetos.pdb
+D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\bin\Debug\vbOrientadoaObjetos.xml
+D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.frmBaseDatos.resources
+D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.frmLogin.resources
+D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.Resources.resources
+D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.Principal.resources
+D:\Proyectos\NET\vbOrientadoaObjetos\vbOrientadoaObjetos\obj\Debug\vbOrientadoaObjetos.vbproj.GenerateResource.Cache
