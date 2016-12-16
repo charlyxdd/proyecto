@@ -52,6 +52,10 @@
         Return Me.pass
     End Function
 
+    Public Function getActivo()
+        Return Me.Activo
+    End Function
+
     Public Sub setNivel(ByVal nivel As Integer)
         Me.nivel = nivel
     End Sub
@@ -62,6 +66,10 @@
 
     Public Sub setPass(ByVal pass As String)
         Me.pass = pass
+    End Sub
+
+    Public Sub setActivo(ByVal activo As Boolean)
+        Me.Activo = activo
     End Sub
 
 End Class

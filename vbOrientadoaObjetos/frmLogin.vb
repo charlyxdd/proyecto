@@ -30,13 +30,8 @@ Public Class frmLogin
 
         If Not IsNothing(dt) Then
             If Des_Y_EncriptaContrasenia(txtPass.Text) = dt.Rows.Item(0).Item("Pass") Then
-                If CBool(dt.Rows.Item(0).Item("Activo")) Then
-                    nombreUser = txtUsuario.Text
-                    nombreCUser = dt.Rows.Item(0).Item("NombreCompleto")
-                    passUser = txtPass.Text
-                    tipoUser = dt.Rows.Item(0).Item("Tipo")
-                    codUser = dt.Rows.Item(0).Item("Codigo")
-
+                usuario = New Usuarios(dt.Rows.Item(0).Item("Codigo"), dt.Rows.Item(0).Item("Nivel"), dt.Rows.Item(0).Item("Nombre"), dt.Rows.Item(0).Item("Pass"), CBool(dt.Rows.Item(0).Item("Activo")))
+                If usuario.getActivo() Then
                     'frmPrincipal = New Principal
                     'frmPrincipal.Show()
                     cerrar = True
@@ -76,27 +71,6 @@ Public Class frmLogin
                 Me.Close()
             End If
         End If
-        Try
-            cnn = New Conexion(cadConexion)
-            Dim dt As DataTable = cnn.getConsulta("SELECT * FROM ConfiguracionLogin")
-            If Not IsNothing(dt) Then
-                If CBool(dt.Rows.Item(0).Item(1)) = False And CBool(dt.Rows.Item(0).Item(2)) = False Then
-                    RadialMenu1.Visible = False
-                ElseIf CBool(dt.Rows.Item(0).Item(1)) = False Then
-                    cmdBaseDatos.Visible = False
-                ElseIf CBool(dt.Rows.Item(0).Item(2)) = False Then
-                    cmdOlvido.Visible = False
-                End If
-            End If
-        Catch ex As Exception
-            MsgBox("La base de datos no se ha configurado", vbInformation, "Error")
-            Dim form As New frmBaseDatos
-            form.ShowDialog()
-            If verificarBaseDatos() = "" Or verificarBaseDatos() = cadConexion Then
-                MsgBox("La base de datos no se ha configurado", vbCritical, "Error fatal")
-                Me.Close()
-            End If
-        End Try
     End Sub
 
     Private Sub SwitchButton1_ValueChanged(sender As Object, e As EventArgs) Handles SwitchButton1.ValueChanged

@@ -2,11 +2,8 @@
 
 Module funciones
     Public cadConexion As String
-    Public tipoUser As String
-    Public codUser As Integer
-    Public nombreUser As String
-    Public nombreCUser As String
-    Public passUser As String
+    Public usuario As Usuarios
+
     Public activo As Object
     Public frmPrincipal As Principal
     Public cajaAbierta As Boolean
